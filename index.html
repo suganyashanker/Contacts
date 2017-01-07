@@ -2,11 +2,40 @@
 <html>
 <head>
     <title>contacts</title>
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
     <link rel="stylesheet" type="text/css" href="style.css"/>
+
 </head>
 <body>
+
+<div class="container">
+<div class="panel panel default">
+<div class="row">
+  <div class="col-md-1">
+   <a class="btn btn-default btn-xs" href="main.html" role="button">back</a>
+
+  </div>
+  <div class="col-md-1">
+    <select>
+      <option>groups</option>
+    </select>
+  </div>
+  <div class="col-md-1">
+    <select>
+      <option>more</option>
+    </select>
+  </div>
+
+
+</div></div></div>
+
+<div>
+<h4> ENTER DETAILS HERE</h4>
+</div>
+
+
 
 <div class="container-fluid">
 <div class="panel panel-default">
@@ -18,20 +47,20 @@
                     <div class="panel-body">
                     <div class="panel-footer">
                     <div class="text-center">
-                            <h4 >add a photo</h4></div></div></div></div>
+                            <h5 >add a photo</h5></div></div></div></div>
                 </div>
                 <div class="col-md-3">
-                              <div class="form-group" rows="6">
-                                  <label class="sr-only" for="exampleInputName">Name</label>
-                                  <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+                          <div class="form-group" rows="6">
+                              <label >Name</label>
+                              <input type="text" class="form-control" id="name" name="name" >
                               </div>
-                              <div class="form-group">
-                                  <label class="sr-only" for="exampleInputJob">Job</label>
-                                  <input type="Job" class="form-control" id="exampleInputName" placeholder="Job">
+                          <div class="form-group">
+                              <label >Job</label>
+                              <input type="text" class="form-control" id="job" name="job">
                               </div>
-                              <div class="form-group">
-                                  <label class="sr-only" for="exampleInputCompany">Company</label>
-                                  <input type="Job" class="form-control" id="exampleInputCompany" placeholder="Company">
+                          <div class="form-group">
+                              <label>Company</label>
+                        <input type="text" class="form-control" id="company"  name="company">
                               </div>
                 </div>
            </div>
@@ -41,34 +70,35 @@
 
 <div class="container-fluid">
 <div class="col-md-4">
-<form>
+<form action="play.html">
      <div class="form-group">
-        <label for="exampleInputEmail">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+        <label >Email address</label>
+        <input type="email" class="form-control" id="mail"  name="email">
      </div>
      <div class="form-group">
-        <label for="exampleInputNumber">Work Number</label>
-        <input type="number" class="form-control" id="exampleInputNumber" placeholder="work Number">
+        <label >Work Number</label>
+        <input type="Number"  maxlength="8" class="form-control" id="worknum" name="worknum">
      </div>
      <div class="form-group">
-        <label for="exampleInputNumber">moblie Number</label>
-        <input type="number" class="form-control" id="exampleInputNumber" placeholder="Mobile Number">
+        <label >moblie Number</label>
+        <input type="Number" maxlength="10" class="form-control" id="mobnum" name="mobnum">
      </div>
      <div class="form-group">
-        <label for="exampleInputAddress">Address</label>
-        <input type="address" class="form-control" id="exampleInputAddress" placeholder="Address">
-     </div>
-
-  <button type="submit" class="btn btn-default">add</button>
+        <label >Address</label>
+        <input type="text" class="form-control" id="address"  name="address">
+</div>
+<a class="btn btn-default btn-xs" href="contactsaved" role="button" id="save">save</a>
   </div>
 
 
   <div class="col-md-4" >
-      <textarea class="form-control" row="6">add a note</textarea></div>
+      <textarea class="form-control" row="6" name="textarea" placeholder="add a text"></textarea></div>
 </form>
 </div></div>
-<script src="https//ajax.googleapis.com/ajax/libe/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<script src="index.js"></script>
 </body>
 
 </html>
